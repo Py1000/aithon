@@ -5,12 +5,12 @@ from functions import *
 
 import os
 
-def setup():
-  try:
+
+try:
     varFile = open("/storage/emulated/0/VARS/var.txt","r")
     varFile = varFile.read()
     return varFile
-  except:
+except:
     os.system("termux-setup-storage")
     os.mkdir("/storage/emulated/0/VARS")
     varFile = open("/storage/emulated/0/VARS/var.txt","a")
@@ -22,15 +22,14 @@ def setup():
     varFile.write(f"{SESSION}")
     varFile = open("/storage/emulated/0/VARS/var.txt","r")
     varFile = varFile.read()
-    return varFile
-  try:
+try:
     conFile = open("/storage/emulated/0/CONFIG/config.txt","r")
     conFile = conFile.read()
     conFileALIVE_TXT = open("/storage/emulated/0/CONFIG/ALIVE_TXT.txt")
     conFileALIVE_TXT = conFileALIVE_TXT.read()
     return conFile
     return conFileALIVE_TXT
-  except:
+except:
     os.system("termux-setup-storage")
     os.mkdir("/storage/emulated/0/CONFIG")
     conFile = open("/storage/emulated/0/CONFIG/config.txt", "w")
