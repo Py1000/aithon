@@ -1,7 +1,7 @@
 import os
 import termuxMain
 from telethon import TelegramClient
-import functions import *
+from functions import *
 
 setup()
 varFileS = varFile.split(" ")
