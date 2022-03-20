@@ -1,5 +1,5 @@
 import os
-import TermuxMain
+import termuxMain
 from telethon import TelegramClient
 import functions import *
 
