@@ -13,7 +13,6 @@ def load(plug):
   mainCode = rawCode.split("#")
   codes = mainCode[1]
   cmdLine = codes.replace("@admin_cmd()",f"@user.on(events.NewMessage(pattern='{nCmd}',outgoing=True))")
-  os.mkdir("/data/data/com.termux/files/home/aithon/termuxOp")
   mFile = open("/data/data/com.termux/files/home/aithon/termuxOp/__main__.py","a")
   print(cmdLine)
   mFile.write(f"\n\n\n {cmdLine}")
