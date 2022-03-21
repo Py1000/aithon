@@ -7,4 +7,4 @@ def load(plug):
   f = open(plug,"r")
   print(f.read())
 
-load(hello)
+load("hello")
