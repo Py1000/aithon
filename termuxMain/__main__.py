@@ -18,7 +18,7 @@ def load(plug):
   print(f"Plugin Loaded : {plug}")
   
 
-load("hello")
+load("rhi")
 load("del")
 
 fileOp = open("/data/data/com.termux/files/home/aithon/termuxOp/__main__.py","a")
