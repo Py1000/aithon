@@ -7,6 +7,6 @@ async def rhi(event):
   rHiMessage = random.choice(rString)
   try:
     await event.edit(rHiMessage)
-    print(f"\n Command Used : rhi \nLocation : {id} \n")
+    print(f"\nCommand Used : rhi \nLocation : {id} \n")
   except:
     await event.edit("**ERROR OCCURRED**")
