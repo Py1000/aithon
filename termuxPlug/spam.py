@@ -5,7 +5,10 @@
 async def spam(event):
   id = event.chat_id
   raw = event.raw_text.split(" ")
-  spamCount = raw[1]
+  try:
+    spamCount = raw[1]
+  except:
+    await event.edit("**ERROR OCCURRED \n Do :** ```.spam <number> | <spam Message>``` ")
   try:
     spamCount = int(spamCount)
   except:
