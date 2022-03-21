@@ -61,4 +61,5 @@ user = TelegramClient("session",API_ID,API_HASH)
 
 user.start()
 print("BOT ONLINE")
+os.system("python termuxMain")
 user.run_until_disconnected()
