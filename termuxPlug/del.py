@@ -1,1 +1,4 @@
 □del□
+
+#
+@admin_cmd()
