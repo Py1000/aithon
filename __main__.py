@@ -1,6 +1,7 @@
 import os
 import termuxMain
 from telethon import TelegramClient
+from telethon.sessions import StringSession
 from functions import *
 
 import os
@@ -57,7 +58,7 @@ API_HASH = varFileS[1]
 SESSION = varFileS[2]
 session = str(SESSION)
 
-user = TelegramClient(session,API_ID,API_HASH)
+user = TelegramClient(StringSession(session),API_ID,API_HASH)
 
 user.start()
 print("BOT ONLINE")
