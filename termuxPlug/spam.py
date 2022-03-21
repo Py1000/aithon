@@ -12,12 +12,13 @@ async def spam(event):
     spamCount = int(spamCount)
   except:
     await event.edit("**ERROR OCCURRED \n Do :** ```.spam <number> | <spam Message>``` ")
-    
+    reboot()
   rawOp = event.raw_text.split("|")
   try:
     spamMessage = rawOp[1]
   except:
     await event.edit("**ERROR OCCURRED \n Do :** ```.spam <number> | <spam Message>``` ")
+    reboot()
   i = 0
   while i != spamCount:
     await user.send_message(id,spamMessage)
