@@ -47,3 +47,9 @@ except:
     conFileALIVE_TXT = open("/storage/emulated/0/CONFIG/ALIVE_TXT.txt")
     conFileALIVE_TXT = conFileALIVE_TXT.read()
 
+varFileS = varFile.split(" ")
+API_ID = varFileS[0]
+API_HASH = varFileS[1]
+SESSION = varFileS[2]
+session = str(SESSION)
+
