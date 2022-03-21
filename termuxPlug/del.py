@@ -2,7 +2,7 @@
 
 #
 @admin_cmd()
-async def del(event):
+async def delOp(event):
   id = event.chat_id
   try:
     toDel =  await event.get_reply_message()
