@@ -1,6 +1,6 @@
-import tele
-user = "YK"
+#aithon-Setup
+#hello
 
-@admin_cmd(pattern=".hello")
+@admin_cmd()
 async def hello(event):
   await event.edit("Hello!")
