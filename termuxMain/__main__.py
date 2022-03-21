@@ -5,8 +5,10 @@ os.system("cd aithon")
 
 def load(plug):
   f = open(f"/data/data/com.termux/files/home/aithon/termuxPlug/{plug}.py","r")
-  lul = f.read()
-  tep = lul.split("□")
-  print(tep)
+  rawCode = f.read()
+  rawCodeS = rawCode.split("□")
+  cmd = rawCodeS[1]
+  mainCode = rawCode.split("#")
+  print(makmCode)
 
 load("hello")
