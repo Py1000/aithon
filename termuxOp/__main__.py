@@ -58,3 +58,10 @@ user = TelegramClient(StringSession(session),API_ID,API_HASH)
 user.start()
 
 rString = ["Hello There!","Hello , how are you doing?","Hey there man","Pro arrived noobs please leave","Hi , hello , hey","Hui hui *_*","Hola *U*"]
+eHiformat = f"""
+{e}■■■{e}
+{e}■■■{e}
+{e}{e}{e}{e}{e}
+{e}■■■{e}
+{e}■■■{e}
+"""
