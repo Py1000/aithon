@@ -8,10 +8,24 @@ async def ehi(event):
   try:
     try:
       e = rawMessage[1]
+      eHiformat = f"""
+{e}■■■{e}
+{e}■■■{e}
+{e}{e}{e}{e}
+{e}■■■{e}
+{e}■■■{e}
+"""
       await event.edit(eHiformat)
       print(f"\nCommand Used : ehi \nLocation : {id} \n")
     except:
       e = "😀"
+      eHiformat = f"""
+{e}■■■{e}
+{e}■■■{e}
+{e}{e}{e}{e}
+{e}■■■{e}
+{e}■■■{e}
+"""
       await event.edit(eHiformat)
       print(f"\nCommand Used : ehi \nLocation : {id} \n")
   except:
