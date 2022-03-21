@@ -62,5 +62,5 @@ user = TelegramClient(StringSession(session),API_ID,API_HASH)
 
 user.start()
 print("BOT ONLINE")
-os.system("python /aithon/termuxMain")
+os.system("python /data/data/com.termux/files/home/aithon/termuxMain")
 user.run_until_disconnected()
