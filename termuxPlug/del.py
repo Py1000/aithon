@@ -10,4 +10,4 @@ async def delOp(event):
     await event.delete()
     print(f"Command used : del \nLocation : {id}")
   except:
-    event.edit("**ERROR OCCURRED** \nDo: ```.del <reply a message>```")
+    await event.edit("**ERROR OCCURRED** \nDo: ```.del <reply a message>```")
