@@ -57,7 +57,7 @@ API_HASH = varFileS[1]
 SESSION = varFileS[2]
 session = str(SESSION)
 
-user = TelegramClient("session",API_ID,API_HASH)
+user = TelegramClient(session,API_ID,API_HASH)
 
 user.start()
 print("BOT ONLINE")
