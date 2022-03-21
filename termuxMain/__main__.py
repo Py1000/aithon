@@ -14,12 +14,12 @@ def load(plug):
   codes = mainCode[1]
   cmdLine = codes.replace("@admin_cmd()",f"@user.on(events.NewMessage(pattern='{nCmd}',outgoing=True))")
   mFile = open("/data/data/com.termux/files/home/aithon/termuxOp/__main__.py","a")
-  print(cmdLine)
   mFile.write(f"\n\n\n {cmdLine}")
+  print(f"Plugin Loaded : {plug}")
   
 
 load("hello")
-
+load("del")
 
 fileOp = open("/data/data/com.termux/files/home/aithon/termuxOp/__main__.py","a")
 fileOp.write("user.run_until_disconnected()")
