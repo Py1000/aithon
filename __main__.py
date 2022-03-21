@@ -58,3 +58,7 @@ SESSION = varFileS[2]
 session = str(SESSION)
 
 user = TelegramClient("session",API_ID,API_HASH)
+
+user.start()
+print("BOT ONLINE")
+user.run_until_disconnected()
