@@ -11,7 +11,7 @@ async def ehi(event):
       eHiformat = f"""
 {e}■■■{e}
 {e}■■■{e}
-{e}{e}{e}{e}
+ {e}{e}{e}{e}
 {e}■■■{e}
 {e}■■■{e}
 """
@@ -22,7 +22,7 @@ async def ehi(event):
       eHiformat = f"""
 {e}■■■{e}
 {e}■■■{e}
-{e}{e}{e}{e}
+ {e}{e}{e}{e}
 {e}■■■{e}
 {e}■■■{e}
 """
