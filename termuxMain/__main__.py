@@ -1,4 +1,8 @@
 import os
-"cd")
-os.system("aithon")
-os.syste
+
+os.system("cd")
+os.system("cd aithon")
+
+def load(plug):
+  f = open(plug,"r")
+  print(f.read())
