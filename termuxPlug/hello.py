@@ -1,4 +1,3 @@
-#aithon-Setup
 #hello
 
 @admin_cmd()
