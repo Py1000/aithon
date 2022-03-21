@@ -1,4 +1,5 @@
 import os
+import random
 from telethon import TelegramClient,events
 from telethon.sessions import StringSession
 
@@ -55,3 +56,5 @@ session = str(SESSION)
 
 user = TelegramClient(StringSession(session),API_ID,API_HASH)
 user.start()
+
+rString = ["","","","","","",""]
