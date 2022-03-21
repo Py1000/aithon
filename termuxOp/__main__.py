@@ -54,6 +54,10 @@ API_HASH = varFileS[1]
 SESSION = varFileS[2]
 session = str(SESSION)
 
+def reboot():
+    user.disconnect()
+    os.system("python aithon")
+
 user = TelegramClient(StringSession(session),API_ID,API_HASH)
 user.start()
 
