@@ -9,7 +9,6 @@ import os
 try:
     varFile = open("/storage/emulated/0/VARS/var.txt","r")
     varFile = varFile.read()
-    return varFile
 except:
     os.system("termux-setup-storage")
     os.mkdir("/storage/emulated/0/VARS")
@@ -27,8 +26,6 @@ try:
     conFile = conFile.read()
     conFileALIVE_TXT = open("/storage/emulated/0/CONFIG/ALIVE_TXT.txt")
     conFileALIVE_TXT = conFileALIVE_TXT.read()
-    return conFile
-    return conFileALIVE_TXT
 except:
     os.system("termux-setup-storage")
     os.mkdir("/storage/emulated/0/CONFIG")
@@ -53,8 +50,6 @@ except:
     conFile = conFile.read()
     conFileALIVE_TXT = open("/storage/emulated/0/CONFIG/ALIVE_TXT.txt")
     conFileALIVE_TXT = conFileALIVE_TXT.read()
-    return conFile
-    return conFileALIVE_TXT
 
 varFileS = varFile.split(" ")
 API_ID = varFileS[0]
