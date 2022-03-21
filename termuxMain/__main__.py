@@ -9,6 +9,6 @@ def load(plug):
   rawCodeS = rawCode.split("□")
   cmd = rawCodeS[1]
   mainCode = rawCode.split("#")
-  print(makmCode)
+  print(mainCode)
 
 load("hello")
