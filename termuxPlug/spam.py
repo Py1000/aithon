@@ -24,4 +24,4 @@ async def spam(event):
   while i != spamCount:
     await user.send_message(id,spamMessage)
     i = i+1
-  print("\nCommand Used : spam \nLocation : {id} \n")
+  print(f"\nCommand Used : spam \nLocation : {id} \n")
