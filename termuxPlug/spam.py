@@ -2,8 +2,6 @@
 
 #
 @admin_cmd()
-async def spam():
-  @user.on(events.NewMessage(pattern="\.spam", outgoing=True))
 async def spam(event):
   id = event.chat_id
   raw = event.raw_text.split(" ")
