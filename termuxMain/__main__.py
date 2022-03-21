@@ -17,6 +17,8 @@ def load(plug):
   mFile.write(f"\n\n\n {cmdLine}")
   print(f"Plugin Loaded : {plug}")
   
+os.system("clear")
+print("《BOT LOG》")
 
 load("rhi")
 load("del")
