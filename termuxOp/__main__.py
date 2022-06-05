@@ -1,5 +1,6 @@
 import os
 import random
+import asyncio
 from telethon import TelegramClient,events
 from telethon.sessions import StringSession
 
