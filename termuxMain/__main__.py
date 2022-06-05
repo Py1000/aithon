@@ -24,6 +24,7 @@ load("rhi")
 load("del")
 load("ehi")
 load("spam")
+load("sdel")
 
 fileOp = open("/data/data/com.termux/files/home/aithon/termuxOp/__main__.py","a")
 fileOp.write("user.run_until_disconnected()")
